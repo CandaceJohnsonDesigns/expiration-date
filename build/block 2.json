@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "cjd-blocks/expiration-date",
+	"version": "0.1.0",
+	"title": "Expiration Date",
+	"category": "theme",
+	"icon": "calendar-alt",
+	"description": "Adds an expiration date to post meta, if supported. Once set, that post will only display until the expiration date.",
+  	"usesContext": [ "postId", "postType", "queryId" ],
+  	"attributes": {
+		"textAlign": {
+	  		"type": "string",
+	  		"default": "left"
+		},
+	  	"format": {
+			"type": "string"
+	  	}
+	},
+  	"supports": {
+		"anchor": true,
+		"html": false,
+		"color": {
+	  		"gradients": true
+		},
+		"spacing": {
+		  	"margin": true
+		},
+		"typography": {
+	  		"fontSize": true,
+	  		"lineHeight": true,
+	  		"__experimentalFontFamily": true,
+	  		"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true,
+				"fontAppearance": true,
+				"textTransform": true
+			}
+		}
+  	},
+	"textdomain": "expiration-date",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

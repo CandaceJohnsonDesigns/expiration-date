@@ -1,0 +1,24 @@
+{
+	"name": "expiration-date",
+	"version": "0.1.0",
+	"description": "Adds an expiration date to post meta if supported and can display a custom message. For example, \"Apply by {date}\" or \"Promotion ends on {date}\". Once meta is set, that post will only display until the expiration date.",
+	"author": "Candace Johnson",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^22.0.1"
+	},
+	"dependencies": {
+		"@wordpress/icons": "^7.0.1",
+		"classnames": "^2.3.1"
+	}
+}
